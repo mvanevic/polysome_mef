@@ -49,8 +49,6 @@ def plot_hist_all(json_files):
   ax.spines[['right', 'top']].set_visible(False)
   ax.legend(['n='+str(int(sum(n)))])
 
-  ax.xaxis.set_minor_locator(MultipleLocator(1))
-
   plot_name = 'Untreated'
   plt.title(plot_name, fontsize=23, weight='bold')
   plt.ylabel('Count')
